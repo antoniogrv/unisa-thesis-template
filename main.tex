@@ -1,0 +1,126 @@
+\documentclass[11pt,oneside,a4paper]{book}
+
+\usepackage[italian,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+\usepackage{upquote}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{amsmath}
+
+\usepackage[top=3cm, bottom=2.5cm, right=2.75cm, left=2.75cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+
+\usepackage{minted}
+\usepackage[usenames,x11names]{xcolor}
+
+
+
+
+\usepackage{csquotes}
+
+\usepackage{hyperref}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{bibliografia.bib}
+
+\begin{document}
+\selectlanguage{italian}
+
+\title{Titolo provvisorio}
+\author{XXX}
+
+
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[width=3cm]{Figure/logo_standard.png}\\
+\hfill\\
+\begin{spacing}{2.0}
+{\LARGE Università degli Studi di Salerno}\\
+{\Large Dipartimento di Informatica}\\
+\end{spacing}
+\hrulefill\\
+\vfill
+{\Large Corso di Laurea Triennale/Magistrale in Informatica }\\
+\vfill\vfill
+%{\large Tesi di Laurea in }\\[0.2truecm]
+%{\Large Informatica}\\
+
+\begin{spacing}{2.5}
+\textbf{\Huge XXX}\\
+\end{spacing}
+\vfill\vfill
+
+\begin{multicols}{2}
+\begin{flushleft}
+{\bf Relatori}\\
+Prof. XXX\\
+Dott.XXX\\
+Dott.ssaXXX\\
+\end{flushleft}
+\columnbreak
+\begin{flushright}
+{\bf Candidat*}\\
+XXX\\
+Matricola: XXX\\
+\end{flushright}
+\end{multicols}
+
+\vfill
+\hrulefill 
+
+Anno Accademico XXXX/XXXX
+
+\end{center}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\begin{flushright}
+\null\vspace{\stretch{1}}
+{\calligra{}}
+\vspace{\stretch{2}}\null
+\end{flushright}
+
+
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+    \input{abstract}
+    
+\chapter{Titolo Capitolo 1}
+    \input{Capitolo 1/introduzione}
+    
+    
+\chapter{Titolo Capitolo 2}
+\section{Titolo Sezione}
+    \input{Capitolo 2/sezione 1}
+
+    
+
+
+    
+
+\printbibliography
+    
+
+    
+\newpage
+
+
+\thispagestyle{empty}
+\null
+\newpage
+\chapter*{Ringraziamenti}
+\input{Appendici/ringraziamenti}
+
+\end{document}
